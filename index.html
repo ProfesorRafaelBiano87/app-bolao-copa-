@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bolão Brasil x Haiti</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <h1>⚽ Bolão Brasil x Haiti</h1>
+
+    <div id="userBox">
+      <input id="name" placeholder="Seu nome" />
+      <button onclick="entrar()">Entrar</button>
+    </div>
+
+    <div id="app" style="display:none;">
+      <h2>Faça seu palpite</h2>
+
+      <div class="form">
+        <input id="golsBrasil" type="number" placeholder="Brasil"/>
+        <span>X</span>
+        <input id="golsHaiti" type="number" placeholder="Haiti"/>
+      </div>
+
+      <button onclick="enviarPalpite()">Enviar Palpite</button>
+
+      <h2>📊 Palpites ao vivo</h2>
+      <div id="lista"></div>
+    </div>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
